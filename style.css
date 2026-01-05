@@ -1,0 +1,274 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input {
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* */
+.container{
+    max-width: 1148px;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0px;
+}
+
+.nav__items{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.nav__item{
+    font-size: 15px;
+    color: #1B1A1A;
+    line-height: 24px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav__item:hover {
+    border-color: #1B1A1A;
+    color: #706666;
+    transition-duration: 0.8s;
+}
+
+.nav__item_get{
+    background-color: #1B1A1A;
+    border-radius: 14px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    padding: 11px 20px;
+    border: none;
+}
+
+.nav__item_get:hover{
+    background: #383131;
+    transition-duration: 0.8s;
+}
+
+.nav__item_get:active {
+    background: rgb(95, 92, 92);
+    transition-duration: 0.8s;
+}
+
+#about{
+    background-color: #ECE7E4;
+}
+
+.about__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about__info_img{
+    display: flex;
+    gap: 51px;
+}
+
+.about__span{
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #645C55;
+    align-self: start;
+}
+
+.about__h{
+    font-size: 64px;
+    line-height: 70.4px;
+    color: #1B1A1A;
+}
+
+.about__p{
+    line-height: 24px;
+    color: #403E3B;
+}
+
+#process{
+    padding: 108px 0px;
+}
+
+.process__span{
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    color: #645C55;
+    display: block;
+    margin-bottom: 13px;
+}
+
+.process__h{
+    font-size: 39px;
+    line-height: 42px;
+    text-align: center;
+    color: #1B1A1A;
+    margin-bottom: 40px;
+}
+
+.process__items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.process__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 32%;
+}
+
+.process__item_h{
+    font-size: 18px;
+    line-height: 26px;
+    color: #403E3B;
+    margin-bottom: 10px;
+}
+
+.process__item_p{
+    font-size: 15px;
+    line-height: 24px;
+    color: #645C55;
+    text-align: center;
+}
+
+.process__item  > img{
+    margin-bottom: 12px;
+}
+
+#projects{
+    padding: 120px 0px 107px 0px;
+    background-color: #ECE7E4;
+}
+
+.projects__h_block{
+    margin-bottom: 42px;
+    max-width: 55%;
+}
+
+.projects__h{
+    font-size: 39px;
+    line-height: 42px;
+    color: #1B1A1A;
+    margin-bottom: 15px;
+}
+
+.projects__span{
+    font-size: 24px;
+    line-height: 30px;
+    color: #645C55;
+}
+
+.projects__items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects__item{
+    border: 1px solid black;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0px
+}
+
+.socialmedia{
+    display: flex;
+    gap: 20px;
+}
+
+#footer{
+    padding-bottom: 60px;
+}
